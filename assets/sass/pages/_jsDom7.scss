@@ -1,0 +1,87 @@
+#dom7 {
+    font-size: 1.6rem;
+    background-image: linear-gradient(45deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 50%, rgb(255, 204, 112) 100%);
+    height: 100vh;
+    overflow: hidden;
+    .open__modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        outline: none;
+        border: none;
+        padding: 20px 40px;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        box-shadow: 0 0 5px #aba4a4;
+        background-color: #fff;
+        transition: 0.25s;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+    .hide {
+        display: none;
+    }
+    .modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        &__inner {
+            width: 45rem;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            animation: showModal linear 0.2s;
+            position: relative;
+            margin: 20rem auto;
+        }
+        &__header {
+            background-color: #e26e70;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.5rem;
+            font-size: 1.7rem;
+            i {
+                cursor: pointer;
+                font-size: 1.8rem;
+            }
+        }
+        &__body {
+            padding: 1.5rem;
+            h2 {
+                color: #e26e70;
+                margin-bottom: 1rem;
+            }
+        }
+        &__footer {
+            padding: 1.5rem;
+            text-align: right;
+            button {
+                outline: none;
+                border: none;
+                padding: 10px 20px;
+                background-color: #e26e70;
+                color: white;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+        }
+    }
+    @keyframes showModal {
+        from {
+            top: -20rem;
+            opacity: 0;
+        }
+        to {
+            top: 0;
+            opacity: 1;
+        }
+    }
+}

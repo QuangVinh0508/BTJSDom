@@ -1,0 +1,63 @@
+#dom5 {
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #8cc84c;
+    .wrapper {
+        width: 50rem;
+        background: #fff;
+        border-radius: 1rem;
+        padding: 2rem;
+        font-size: 1.6rem;
+        .tags {
+            &__title {
+                font-size: 2.2rem;
+                font-weight: 600;
+            }
+            &__content {
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 1rem;
+                    margin: 2rem 0;
+                    border-radius: 5px;
+                    border: 1px solid #888;
+                    input {
+                        padding: 5px;
+                        border: none;
+                        outline: none;
+                        font-size: 2rem;
+                    }
+                    li {
+                        margin: 4px 3px;
+                        list-style: none;
+                        border-radius: 5px;
+                        background: #8cc84c;
+                        padding: 1rem;
+                        color: #fff;
+                        i {
+                            margin-left: 1rem;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            &__button {
+                border: none;
+                outline: none;
+                color: #fff;
+                cursor: pointer;
+                padding: 1rem 2rem;
+                border-radius: 5px;
+                background: #8cc84c;
+                transition: all 0.3s ease;
+                font-size: 1.6rem;
+                &:hover {
+                    background: #7cac49;
+                }
+            }
+        }
+    }
+}
