@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS DOM 2</title>
+    <title>JS DOM 1</title>
 
     <!-- CDN FONT AWESOME -->
     <link
@@ -16,22 +16,26 @@
     />
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.min.css" />
 
     <!-- MAIN JS -->
-    <script src="./assets/JS/jsDom2.js" defer></script>
+    <script src="../assets/JS/jsDOm1.js" defer></script>
   </head>
   <body>
-    <div id="dom2">
-      <div class="range">
-        <div class="range__title">
-          <h1>Custom Range Slider</h1>
-        </div>
-        <div class="range__bar">
-          <div class="range__bar-content">
-            <span></span>
+    <div id="dom1">
+      <div class="list">
+        <div class="list__title">
+          <h4>Live Product Filter</h4>
+          <div class="list__title-form">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="text"
+              id="filter"
+              placeholder="Tìm sản phẩm mong muốn..."
+            />
           </div>
         </div>
+        <div class="list__products"></div>
       </div>
     </div>
   </body>

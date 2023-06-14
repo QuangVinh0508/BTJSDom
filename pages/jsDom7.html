@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS DOM 5</title>
+    <title>JS DOM 7</title>
 
     <!-- CDN FONT AWESOME -->
     <link
@@ -16,26 +16,29 @@
     />
 
     <!-- MAIN CSS -->
-    <link rel="stylesheet" href="assets/css/main.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.min.css" />
 
     <!-- MAIN JS -->
-    <script src="./assets/JS/jsDom5.js" defer></script>
+    <script src="../assets/JS/jsDom7.js" defer></script>
   </head>
   <body>
-    <div id="dom5">
+    <div id="dom7">
       <div class="wrapper">
-        <div class="tags">
-          <div class="tags__title">
-            <h2>Search Tags</h2>
+        <button class="open__modal">Open Modal</button>
+        <div class="modal hide">
+          <div class="modal__inner">
+            <div class="modal__header">
+              <p>Welcome to VProject</p>
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="modal__body">
+              <h2>Modal</h2>
+              <p>Đây là phần body của modal</p>
+            </div>
+            <div class="modal__footer">
+              <button>Close</button>
+            </div>
           </div>
-          <div class="tags__content">
-            <ul>
-              <!-- <li>nodejs <i class="fa-solid fa-xmark"></i></li>
-              <li>reactjs <i class="fa-solid fa-xmark"></i></li> -->
-              <input type="text" placeholder="Type and enter">
-            </ul>
-          </div>
-          <button class="tags__button">Remove All</button>
         </div>
       </div>
     </div>
