@@ -1314,3 +1314,143 @@ body {
   right: 25px;
   cursor: pointer;
 }
+
+#dom15 {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#4daf54), to(#3d8880));
+  background: linear-gradient(to right, #4daf54, #3d8880);
+  overflow: hidden;
+}
+#dom15 .card {
+  margin: 20rem auto;
+  width: 32rem;
+  height: 40rem;
+  background-color: #272d40;
+  border-radius: 1.5rem;
+  padding: 4rem 2rem;
+  color: #fff;
+  position: relative;
+}
+#dom15 .card:hover .card__img {
+  -webkit-transform: translateY(-90px) rotate(-20deg);
+          transform: translateY(-90px) rotate(-20deg);
+}
+#dom15 .card:hover .card__title {
+  -webkit-transform: translate(-40px, -72px);
+          transform: translate(-40px, -72px);
+}
+#dom15 .card:hover .card__price {
+  -webkit-transform: translate(-112px, -72px);
+          transform: translate(-112px, -72px);
+}
+#dom15 .card__img {
+  width: 90%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#dom15 .card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#dom15 .card__title {
+  color: #4daf54;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+}
+#dom15 .card__price {
+  font-weight: 600;
+  font-size: 2.6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+}
+#dom15 .card__size, #dom15 .card__color, #dom15 .card__action {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#dom15 .card__size {
+  margin-top: 10rem;
+}
+#dom15 .card__size span {
+  padding: 2px 10px;
+  background-color: #dadada;
+  margin: 0 5px;
+  border-radius: 5px;
+  color: #272d40;
+  cursor: pointer;
+}
+#dom15 .card:hover .card__size {
+  margin-top: -3rem;
+}
+#dom15 .card:hover .card__size, #dom15 .card:hover .card__color, #dom15 .card:hover .card__action {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  opacity: 1;
+  visibility: visible;
+}
+#dom15 .card__size, #dom15 .card__color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+#dom15 .card__size h3, #dom15 .card__color h3 {
+  font-weight: unset;
+  margin-right: 1.2rem;
+}
+#dom15 .card .card__color span {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+#dom15 .card .card__color span.green {
+  background-color: green;
+}
+#dom15 .card .card__color span.red {
+  background-color: red;
+}
+#dom15 .card .card__color span.black {
+  background-color: black;
+}
+#dom15 .card__action button {
+  padding: 1rem 2rem;
+  outline: none;
+  border: none;
+  background-color: #4daf54;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 7px;
+  font-weight: 600;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+#dom15 .card__action button:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+#dom15 .card .like,
+#dom15 .card .cart {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 2;
+}
+#dom15 .card .cart {
+  left: unset;
+  right: 2rem;
+}
