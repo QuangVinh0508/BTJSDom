@@ -1212,3 +1212,105 @@ body {
   left: 0;
   z-index: 1;
 }
+
+#dom14 {
+  height: 100vh;
+  background-color: #dadada;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#dom14 .wrapper {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+#dom14 .wrapper .image {
+  width: 22%;
+  height: 200px;
+  overflow: hidden;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#dom14 .wrapper .image:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#dom14 .wrapper .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+#dom14 .gallery {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+#dom14 .gallery.show {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+#dom14 .gallery__inner {
+  width: 70%;
+  margin: 0 auto;
+}
+#dom14 .gallery__inner img {
+  width: 100%;
+}
+#dom14 .gallery .control {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 50px;
+  cursor: pointer;
+}
+#dom14 .gallery .prev {
+  left: 15px;
+}
+#dom14 .gallery .next {
+  right: 15px;
+}
+#dom14 .hide {
+  display: none;
+}
+#dom14 .close {
+  color: white;
+  font-size: 35px;
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  cursor: pointer;
+}
