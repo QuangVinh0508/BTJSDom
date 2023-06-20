@@ -200,6 +200,9 @@ body {
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
+#dom1 .hide {
+  display: none;
+}
 
 #dom2 .range {
   width: 100%;

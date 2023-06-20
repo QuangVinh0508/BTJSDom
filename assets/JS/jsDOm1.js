@@ -5,6 +5,9 @@ const filter = $("#filter");
 const products = $(".list__products");
 const listItems = [];
 
+getData();
+filter.addEventListener('input', (e) => filterData(e.target.value));
+
 async function getData() {
   const res = await fetch("https://fakestoreapi.com/products");
 
@@ -29,4 +32,12 @@ async function getData() {
   });
 }
 
-getData();
+function filterData(search) {
+  listItems.forEach((item) => {
+    if (item.innerText.toLowerCase().includes(search.toLowerCase())) {
+      item.classList.remove('hide');
+    } else {
+      item.classList.add('hide');
+    }
+  });
+}
