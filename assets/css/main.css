@@ -1900,3 +1900,129 @@ body {
 #dom23 .hide {
   display: none;
 }
+
+#dom24 {
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+#dom24 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90rem;
+}
+#dom24 .square {
+  background-color: #1d1d1d;
+  -webkit-box-shadow: 0 0 2px #000;
+          box-shadow: 0 0 2px #000;
+  height: 4rem;
+  width: 4rem;
+  margin: 2px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+#dom24 .square:hover {
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+:root {
+  --primary-color: #0075ff;
+}
+
+#dom25 {
+  background: linear-gradient(145deg, #7c1599, #7e4ae8);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#dom25 .player__video {
+  width: 100%;
+}
+#dom25 .player {
+  width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+#dom25 .player:hover .player__controls {
+  -webkit-transform: unset;
+          transform: unset;
+}
+#dom25 .player__controls {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+  color: white;
+}
+#dom25 .player__controls > * {
+  margin: 5px;
+}
+#dom25 .player__progress {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 10px;
+  background-color: #fff;
+  position: relative;
+}
+#dom25 .player__progress__filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--primary-color);
+}
+#dom25 .player__button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+#dom25 .player__button:hover {
+  color: var(--primary-color);
+}
+#dom25 .player__volume input {
+  position: relative;
+  top: 1px;
+}
+#dom25 .toggle {
+  font-size: 30px;
+}

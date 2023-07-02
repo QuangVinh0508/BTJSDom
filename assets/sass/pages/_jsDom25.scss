@@ -1,0 +1,69 @@
+:root {
+    --primary-color: #0075ff;
+}
+
+#dom25 {
+    background: linear-gradient(145deg, #7c1599, #7e4ae8);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .player__video {
+        width: 100%;
+    }
+    .player {
+        width: 800px;
+        position: relative;
+        overflow: hidden;
+        &:hover .player__controls {
+            transform: unset;
+        }
+        &__controls {
+            width: 100%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            bottom: 0;
+            left: 0;
+            transform: translateY(100%);
+            transition: 0.25s;
+            background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.9));
+            color: white;
+            & > * {
+                margin: 5px;
+            }
+        }
+        &__progress {
+            flex: 1;
+            height: 10px;
+            background-color: #fff;
+            position: relative;
+            &__filled {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background-color: var(--primary-color);
+            }
+        }
+        &__button {
+            outline: none;
+            border: none;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            &:hover {
+                color: var(--primary-color);
+            }
+        }
+        &__volume {
+            input {
+                position: relative;
+                top: 1px;
+            }
+        }
+    }
+    .toggle {
+        font-size: 30px;
+    }
+}
